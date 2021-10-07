@@ -9,9 +9,12 @@
 
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/screen.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jqtransform.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/jqtransform.css">
 
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
