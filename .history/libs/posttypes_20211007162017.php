@@ -33,7 +33,7 @@ function ilovetoeat_init_posttypes() {
         'has_archive' => true
     );
 
-    register_post_type( 'recipes', $recipes_args );
+    register_post_type( recipes', recipes_args );
 }
 
 ?>
