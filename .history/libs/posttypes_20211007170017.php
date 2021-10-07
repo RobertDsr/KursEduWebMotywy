@@ -112,7 +112,7 @@ function ilovetoeat_init_taxonomies() {
         array('recipes'),
         array(
             'hierarchical' => true,
-            'labels' => array(
+            'label' => array(
                 'name' => 'Składniki',
                 'singular_name' => 'Składniki',
                 'search_items' => 'Wyszukaj składniki',
@@ -125,14 +125,10 @@ function ilovetoeat_init_taxonomies() {
                 'separate_items_with_commas' => 'Oddziel składniki przecinkiem',
                 'add_or_remove_items' => 'Dodaj lub usuń składnik',
                 'choose_from_most_used' => 'Wybierz spośród najczęściej używanych składników',
-                'menu_name' => 'Składniki'
-            ),
-            'show_ui' => true,
-            'update_count_callback' => '_update_post_term_count',
-            'query_var' => true,
-            'rewrite' => array('slug' => 'ingredient')
+                'menu_name'
+            )
         )
-        );
+    )
 }
 
 ?>

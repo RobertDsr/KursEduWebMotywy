@@ -112,7 +112,7 @@ function ilovetoeat_init_taxonomies() {
         array('recipes'),
         array(
             'hierarchical' => true,
-            'labels' => array(
+            'label' => array(
                 'name' => 'Składniki',
                 'singular_name' => 'Składniki',
                 'search_items' => 'Wyszukaj składniki',

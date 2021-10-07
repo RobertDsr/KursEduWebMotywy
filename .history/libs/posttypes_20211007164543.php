@@ -104,35 +104,6 @@ function ilovetoeat_init_posttypes() {
 
 /*Rejestracja taksonomi */
 
-add_action('init', 'ilovetoeat_init_taxonomies');
-
-function ilovetoeat_init_taxonomies() {
-    register_taxonomy(
-        'ingredients',
-        array('recipes'),
-        array(
-            'hierarchical' => true,
-            'labels' => array(
-                'name' => 'Składniki',
-                'singular_name' => 'Składniki',
-                'search_items' => 'Wyszukaj składniki',
-                'popular_items' => 'Popularne składniki',
-                'all_items' => 'Wszystkie składniki',
-                'edit_item' => 'Edytuj składnik',
-                'update_item' => 'Aktualizuj składnik',
-                'add_new_item' => 'Dodaj nowy składnik',
-                'new_item_name' => 'Nazwa nowego składnika',
-                'separate_items_with_commas' => 'Oddziel składniki przecinkiem',
-                'add_or_remove_items' => 'Dodaj lub usuń składnik',
-                'choose_from_most_used' => 'Wybierz spośród najczęściej używanych składników',
-                'menu_name' => 'Składniki'
-            ),
-            'show_ui' => true,
-            'update_count_callback' => '_update_post_term_count',
-            'query_var' => true,
-            'rewrite' => array('slug' => 'ingredient')
-        )
-        );
-}
+add_action('init', $function_to_add, $priority, $accepted_args)
 
 ?>
