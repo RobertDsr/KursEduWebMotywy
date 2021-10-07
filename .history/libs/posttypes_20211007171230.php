@@ -2,8 +2,7 @@
 
 add_action('init', 'ilovetoeat_init_posttypes');
 
-function ilovetoeat_init_posttypes()
-{
+function ilovetoeat_init_posttypes() {
     /* Registration recipes */
     $recipes_args = array(
         'labels' => array(
@@ -34,7 +33,7 @@ function ilovetoeat_init_posttypes()
         'has_archive' => true
     );
 
-    register_post_type('recipes', $recipes_args);
+    register_post_type( 'recipes', $recipes_args );
 
     /* Registration Restaurants */
 
@@ -67,7 +66,7 @@ function ilovetoeat_init_posttypes()
         'has_archive' => true
     );
 
-    register_post_type('restaurants', $restaurants_args);
+    register_post_type( 'restaurants', $restaurants_args );
 
     /*Register Food Fight Post Type*/
 
@@ -100,15 +99,14 @@ function ilovetoeat_init_posttypes()
         'has_archive' => true
     );
 
-    register_post_type('foodfight', $food_fights_args);
+    register_post_type( 'foodfight', $food_fights_args );
 }
 
 /*Rejestracja taksonomi */
 
 add_action('init', 'ilovetoeat_init_taxonomies');
 
-function ilovetoeat_init_taxonomies()
-{
+function ilovetoeat_init_taxonomies() {
     register_taxonomy(
         'ingredients',
         array('recipes'),
@@ -133,103 +131,5 @@ function ilovetoeat_init_taxonomies()
             'update_count_callback' => '_update_post_term_count',
             'query_var' => true,
             'rewrite' => array('slug' => 'ingredient')
-        )
-    );
-
-    /* Register Meal Types */
-
-    register_taxonomy(
-        'meal-type',
-        array('recipes', 'restaurants'),
-        array(
-            'hierarchical' => true,
-            'labels' => array(
-                'name' => 'Typ dania', 'taxonomy general name',
-                'singular_name' => 'Typ dania', 'taxonomy singular name',
-                'search_items' => 'Wyszukaj typ dania',
-                'popular_items' => 'Popularne typy dań',
-                'all_items' => 'Wszystkie typy dań',
-                'most_used_items' => null,
-                'parent_item' => null,
-                'parent_item_colon' => null,
-                'edit_item' => 'Edytuj typ dania',
-                'update_item' => 'Aktualizuj typ dania',
-                'add_new_item' => 'Dodaj nowy typ dania',
-                'new_item_name' => 'Nazwa nowego typu dania',
-                'separate_items_with_commas' => 'Oddziel typy dań przecinkiem',
-                'add_or_remove_items' => 'Dodaj lub usuń typ dania',
-                'choose_from_most_used' => 'Wybierz spośród najczęściej używanych typów dań',
-                'menu_name' => 'Typ dania'
-            ),
-            'show_ui' => true,
-            'update_count_callback' => '_update_post_term_count',
-            'query_var' => true,
-            'rewrite' => array('slug' => 'ingredient')
-        )
-    );
-
-    /* Register cousine types */
-
-    register_taxonomy(
-        'cousine-type',
-        array('recipes', 'restaurants'),
-        array(
-            'hierarchical' => true,
-            'labels' => array(
-                'name' => 'Rodzaj kuchni',
-                'singular_name' => 'Rodzaj kuchni',
-                'search_items' => 'Wyszukaj rodzaj kuchni',
-                'popular_items' => 'Popularne rodzaj kuchni',
-                'all_items' => 'Wszystkie rodzaje kuchni',
-                'most_used_items' => null,
-                'parent_item' => null,
-                'parent_item_colon' => null,
-                'edit_item' => 'Edytuj rodzaj kuchni',
-                'update_item' => 'Aktualizuj rodzaj kuchni',
-                'add_new_item' => 'Dodaj nowy rodzaj kuchni',
-                'new_item_name' => 'Nazwa nowego rodzaju kuchni',
-                'separate_items_with_commas' => 'Oddziel rodzaje kuchni przecinkiem',
-                'add_or_remove_items' => 'Dodaj lub usuń rodzaj kuchni',
-                'choose_from_most_used' => 'Wybierz spośród najczęściej używanych rodzajów kuchni',
-                'menu_name' => 'Rodzaj kuchni'
-            ),
-            'show_ui' => true,
-            'update_count_callback' => '_update_post_term_count',
-            'query_var' => true,
-            'rewrite' => array('slug' => 'ingredient')
-        )
-    );
-
-    /* Cities */
-
-    register_taxonomy(
-        'city',
-        array('restaurants'),
-        array(
-            'hierarchical' => false,
-            'labels' => array(
-                'name' => 'Miasto',
-                'singular_name' => 'Miasto',
-                'search_items' => 'Wyszukaj miasto',
-                'popular_items' => 'Popularne miasto',
-                'all_items' => 'Wszystkie miasta',
-                'most_used_items' => null,
-                'parent_item' => null,
-                'parent_item_colon' => null,
-                'edit_item' => 'Edytuj miasto',
-                'update_item' => 'Aktualizuj miasto',
-                'add_new_item' => 'Dodaj nowe miasto',
-                'new_item_name' => 'Nazwa nowego miasta',
-                'separate_items_with_commas' => 'Oddziel miasta przecinkiem',
-                'add_or_remove_items' => 'Dodaj lub usuń miasto',
-                'choose_from_most_used' => 'Wybierz spośród najczęściej używanych rodzajów miast',
-                'menu_name' => 'Miasto'
-            ),
-            'show_ui' => true,
-            'update_count_callback' => '_update_post_term_count',
-            'query_var' => true,
-            'rewrite' => array('slug' => 'ingredient')
-        )
-    );
-
+        ));
 }

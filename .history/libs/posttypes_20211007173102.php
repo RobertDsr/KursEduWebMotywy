@@ -200,36 +200,4 @@ function ilovetoeat_init_taxonomies()
         )
     );
 
-    /* Cities */
-
-    register_taxonomy(
-        'city',
-        array('restaurants'),
-        array(
-            'hierarchical' => false,
-            'labels' => array(
-                'name' => 'Miasto',
-                'singular_name' => 'Miasto',
-                'search_items' => 'Wyszukaj miasto',
-                'popular_items' => 'Popularne miasto',
-                'all_items' => 'Wszystkie miasta',
-                'most_used_items' => null,
-                'parent_item' => null,
-                'parent_item_colon' => null,
-                'edit_item' => 'Edytuj miasto',
-                'update_item' => 'Aktualizuj miasto',
-                'add_new_item' => 'Dodaj nowe miasto',
-                'new_item_name' => 'Nazwa nowego miasta',
-                'separate_items_with_commas' => 'Oddziel miasta przecinkiem',
-                'add_or_remove_items' => 'Dodaj lub usuń miasto',
-                'choose_from_most_used' => 'Wybierz spośród najczęściej używanych rodzajów miast',
-                'menu_name' => 'Miasto'
-            ),
-            'show_ui' => true,
-            'update_count_callback' => '_update_post_term_count',
-            'query_var' => true,
-            'rewrite' => array('slug' => 'ingredient')
-        )
-    );
-
 }

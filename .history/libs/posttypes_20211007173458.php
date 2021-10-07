@@ -220,10 +220,10 @@ function ilovetoeat_init_taxonomies()
                 'update_item' => 'Aktualizuj miasto',
                 'add_new_item' => 'Dodaj nowe miasto',
                 'new_item_name' => 'Nazwa nowego miasta',
-                'separate_items_with_commas' => 'Oddziel miasta przecinkiem',
-                'add_or_remove_items' => 'Dodaj lub usuń miasto',
-                'choose_from_most_used' => 'Wybierz spośród najczęściej używanych rodzajów miast',
-                'menu_name' => 'Miasto'
+                'separate_items_with_commas' => 'Oddziel miasto przecinkiem',
+                'add_or_remove_items' => 'Dodaj lub usuń rodzaj kuchni',
+                'choose_from_most_used' => 'Wybierz spośród najczęściej używanych rodzajów kuchni',
+                'menu_name' => 'Rodzaj kuchni'
             ),
             'show_ui' => true,
             'update_count_callback' => '_update_post_term_count',
