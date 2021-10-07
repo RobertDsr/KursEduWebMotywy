@@ -39,7 +39,7 @@ function ilovetoeat_init_posttypes() {
 
     $restaurants_args = array(
         'labels' => array(
-            'name' => 'Restauracje',
+            'name' => 'Restauracja',
             'singular_name' => 'Restauracje',
             'all_items' => 'Wszystkie restauracje',
             'add_new' => 'Dodaj nową restaurację',

@@ -39,17 +39,17 @@ function ilovetoeat_init_posttypes() {
 
     $restaurants_args = array(
         'labels' => array(
-            'name' => 'Restauracje',
-            'singular_name' => 'Restauracje',
-            'all_items' => 'Wszystkie restauracje',
-            'add_new' => 'Dodaj nową restaurację',
-            'add_new_item' => 'Dodaj nową restaurację',
-            'edit_item' => 'Edytuj restaurację',
-            'new_item' => 'Nowa restauracja',
-            'view_item' => 'Zobacz restaurację',
-            'search_items' => 'Szukaj restauracji',
-            'not_found' => 'Nie znaleziono żadnych restauracji',
-            'not_found_in_trash' => 'Nie znaleziono żadnych restauracji w koszu',
+            'name' => 'Restauracja',
+            'singular_name' => '',
+            'all_items' => 'Wszystkie przepisy',
+            'add_new' => 'Dodaj nowy przepis',
+            'add_new_item' => 'Dodaj nowy przepis',
+            'edit_item' => 'Edytuj przepis',
+            'new_item' => 'Nowy przepis',
+            'view_item' => 'Zobacz przepis',
+            'search_items' => 'Szukaj w przepisach',
+            'not_found' => 'Nie znaleziono przepisu',
+            'not_found_in_trash' => 'Brak przepisów w koszu',
             'parent_item_colon' => ''
         ),
         'public' => true,
@@ -61,12 +61,12 @@ function ilovetoeat_init_posttypes() {
         'hierarchical' => false,
         'menu_position' => 5,
         'supports' => array(
-            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'post-formats'
+            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields'
         ),
         'has_archive' => true
     );
 
-    register_post_type( 'restaurants', $restaurants_args );
+    register_post_type( 'recipes', $recipes_args );
 }
 
 ?>

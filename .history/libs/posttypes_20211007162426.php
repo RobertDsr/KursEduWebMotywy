@@ -35,38 +35,7 @@ function ilovetoeat_init_posttypes() {
 
     register_post_type( 'recipes', $recipes_args );
 
-    /* Registration Restaurants */
-
-    $restaurants_args = array(
-        'labels' => array(
-            'name' => 'Restauracje',
-            'singular_name' => 'Restauracje',
-            'all_items' => 'Wszystkie restauracje',
-            'add_new' => 'Dodaj nową restaurację',
-            'add_new_item' => 'Dodaj nową restaurację',
-            'edit_item' => 'Edytuj restaurację',
-            'new_item' => 'Nowa restauracja',
-            'view_item' => 'Zobacz restaurację',
-            'search_items' => 'Szukaj restauracji',
-            'not_found' => 'Nie znaleziono żadnych restauracji',
-            'not_found_in_trash' => 'Nie znaleziono żadnych restauracji w koszu',
-            'parent_item_colon' => ''
-        ),
-        'public' => true,
-        'public_queryable' => true,
-        'show_ui' => true,
-        'query_var' => true,
-        'rewrite' => true,
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'menu_position' => 5,
-        'supports' => array(
-            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'post-formats'
-        ),
-        'has_archive' => true
-    );
-
-    register_post_type( 'restaurants', $restaurants_args );
+    /
 }
 
 ?>

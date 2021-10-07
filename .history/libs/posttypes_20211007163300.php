@@ -39,7 +39,7 @@ function ilovetoeat_init_posttypes() {
 
     $restaurants_args = array(
         'labels' => array(
-            'name' => 'Restauracje',
+            'name' => 'Restauracja',
             'singular_name' => 'Restauracje',
             'all_items' => 'Wszystkie restauracje',
             'add_new' => 'Dodaj nową restaurację',
@@ -61,7 +61,7 @@ function ilovetoeat_init_posttypes() {
         'hierarchical' => false,
         'menu_position' => 5,
         'supports' => array(
-            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'post-formats'
+            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', ''
         ),
         'has_archive' => true
     );
