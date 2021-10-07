@@ -231,67 +231,12 @@ function ilovetoeat_init_taxonomies()
             'rewrite' => array('slug' => 'ingredient')
         )
     );
+
 }
 
 add_action('admin_head', 'ilte_admin_icons');
-function ilte_admin_icons()
-{
-    $ICON_URL = ILOVEEAT_THEME_URL . 'img/admin';
+function ilte_admin_icons () {
+    $ICON_URL = ILOVEEAT_THEME_URL.'img/admin';
 
-?>
-
-    <style>
-        /* po to żeby w panelu admina zmienić domyślne ikonki custom post types*/
-        /* dla menu */
-
-        #menu-posts-recipes .wp-menu-image,
-        #menu-posts-restaurants .wp-menu-image,
-        #menu-posts-foodfight .wp-menu-image {
-            background-repeat: no-repeat;
-            background-position: center -17px !important;
-        }
-
-        #menu-posts-recipes:hover .wp-menu-image,
-        #menu-posts-restaurants:hover .wp-menu-image,
-        #menu-posts-foodfight:hover .wp-menu-image,
-        #menu-posts-recipes.wp-has-current-submenu .wp-menu-image,
-        #menu-posts-restaurants.wp-has-current-submenu .wp-menu-image,
-        #menu-posts-foodfight.wp-has-current-submenu .wp-menu-image {
-            background-repeat: no-repeat;
-            background-position: center 6px !important;
-        }
-
-        #menu-posts-recipes .wp-menu-image {
-            background-image: url('<?php echo $ICON_URL . 'icon-recipes-menu.png' ?>');
-        }
-
-        #menu-posts-restaurants .wp-menu-image {
-            background-image: url('<?php echo $ICON_URL . 'icon-restaurants-menu.png' ?>');
-        }
-
-        #menu-posts-foodfight .wp-menu-image {
-            background-image: url('<?php echo $ICON_URL . 'icon-foodfight-menu.png' ?>');
-        }
-
-
-        .icon32-posts-recipes,
-        .icon32-posts-restaurants,
-        .icon32-posts-foodfight {
-            background-position: center center !important;
-        }
-
-        /* dla posdtrony*/
-        .icon32-posts-recipes {
-            background-image: url('<?php echo $ICON_URL . 'icon-recipes-header.png' ?>') !important;
-        }
-
-        .icon32-posts-restaurants {
-            background-image: url('<?php echo $ICON_URL . 'icon-restaurants-header.png' ?>') !important;
-        }
-
-        .icon32-posts-foodfight {
-            background-image: url('<?php echo $ICON_URL . 'icon-foodfight-header.png' ?>') !important;
-        }
-    </style>
-
-<?php } ?>
+    ?>
+    
