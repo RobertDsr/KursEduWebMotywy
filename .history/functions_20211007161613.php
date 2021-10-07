@@ -10,4 +10,4 @@ if(!defined("ILOVEEAT_THEME_URL")) {
 define('ILOVEEAT_THEME_URL', WP_CONTENT_URL . '/themes/' .get_template() .'/');
 }
 
-require_once ILOVEEAT_THEME_DIR.'libs/posttypes.php';
+
