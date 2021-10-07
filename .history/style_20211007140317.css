@@ -16,7 +16,5 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .wpinfo {
     display: block;
     min-height: 200px;
-    background: red;
-    color:white;
-    font-size: 1.5em;
+    
 }

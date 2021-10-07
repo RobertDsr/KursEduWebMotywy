@@ -28,9 +28,7 @@
     <script src="<?php echo ILOVEEAT_THEME_URL ?>js/slides.jquery.js"></script>
     <script src="<?php echo ILOVEEAT_THEME_URL ?>js/scripts.js"></script>
 
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-<?php wp_head() ?>
+<link rel="pingback" href="<?php bloginfo('pingback_url'); "
 
 </head>
 

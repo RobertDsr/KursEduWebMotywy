@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/screen.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jqtransform.css">
 
+    
 
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,11 +28,6 @@
     <script src="<?php echo ILOVEEAT_THEME_URL ?>js/jquery.jqtransform.js"></script>
     <script src="<?php echo ILOVEEAT_THEME_URL ?>js/slides.jquery.js"></script>
     <script src="<?php echo ILOVEEAT_THEME_URL ?>js/scripts.js"></script>
-
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-<?php wp_head() ?>
-
 </head>
 
 <body>
