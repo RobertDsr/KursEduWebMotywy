@@ -34,11 +34,11 @@
 
 </head>
 
-<body <?php body_class()?>>
+<body >
 
     <header>
         <div class="pos-center">
-            <h1><a href="<?php echo esc_url(home_url('/')); ?>">lovetoeat.pl</a></h1>
+            <h1><a href="#">lovetoeat.pl</a></h1>
 
             <nav id="main-nav">
                 <div>
