@@ -68,38 +68,7 @@ function ilovetoeat_init_posttypes() {
 
     register_post_type( 'restaurants', $restaurants_args );
 
-    /*Register Food Fight Post Type*/
-
-    $food_fights_args = array(
-        'labels' => array(
-            'name' => 'Food Fight',
-            'singular_name' => 'Food Fight',
-            'all_items' => 'Wszystkie pojedynki',
-            'add_new' => 'Dodaj nową pojedynek',
-            'add_new_item' => 'Dodaj nową pojedynek',
-            'edit_item' => 'Edytuj pojedynek',
-            'new_item' => 'Nowa pojedynek',
-            'view_item' => 'Zobacz pojedynek',
-            'search_items' => 'Szukaj pojedynku',
-            'not_found' => 'Nie znaleziono żadnych pojedynków',
-            'not_found_in_trash' => 'Nie znaleziono żadnych pojedynków w koszu',
-            'parent_item_colon' => ''
-        ),
-        'public' => true,
-        'public_queryable' => true,
-        'show_ui' => true,
-        'query_var' => true,
-        'rewrite' => true,
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'menu_position' => 5,
-        'supports' => array(
-            'title', 'editor', 'author', 'thumbnail', 'custom-fields'
-        ),
-        'has_archive' => true
-    );
-
-    register_post_type( 'foodfight', $food_fights_args );
+    /*
 }
 
 ?>

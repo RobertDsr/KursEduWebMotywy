@@ -73,16 +73,16 @@ function ilovetoeat_init_posttypes() {
     $food_fights_args = array(
         'labels' => array(
             'name' => 'Food Fight',
-            'singular_name' => 'Food Fight',
-            'all_items' => 'Wszystkie pojedynki',
-            'add_new' => 'Dodaj nową pojedynek',
-            'add_new_item' => 'Dodaj nową pojedynek',
-            'edit_item' => 'Edytuj pojedynek',
-            'new_item' => 'Nowa pojedynek',
-            'view_item' => 'Zobacz pojedynek',
-            'search_items' => 'Szukaj pojedynku',
-            'not_found' => 'Nie znaleziono żadnych pojedynków',
-            'not_found_in_trash' => 'Nie znaleziono żadnych pojedynków w koszu',
+            'singular_name' => 'Food ',
+            'all_items' => 'Wszystkie restauracje',
+            'add_new' => 'Dodaj nową restaurację',
+            'add_new_item' => 'Dodaj nową restaurację',
+            'edit_item' => 'Edytuj restaurację',
+            'new_item' => 'Nowa restauracja',
+            'view_item' => 'Zobacz restaurację',
+            'search_items' => 'Szukaj restauracji',
+            'not_found' => 'Nie znaleziono żadnych restauracji',
+            'not_found_in_trash' => 'Nie znaleziono żadnych restauracji w koszu',
             'parent_item_colon' => ''
         ),
         'public' => true,
@@ -94,12 +94,12 @@ function ilovetoeat_init_posttypes() {
         'hierarchical' => false,
         'menu_position' => 5,
         'supports' => array(
-            'title', 'editor', 'author', 'thumbnail', 'custom-fields'
+            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'post-formats'
         ),
         'has_archive' => true
     );
 
-    register_post_type( 'foodfight', $food_fights_args );
+    register_post_type( 'restaurants', $restaurants_args );
 }
 
 ?>

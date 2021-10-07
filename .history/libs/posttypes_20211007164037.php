@@ -94,12 +94,12 @@ function ilovetoeat_init_posttypes() {
         'hierarchical' => false,
         'menu_position' => 5,
         'supports' => array(
-            'title', 'editor', 'author', 'thumbnail', 'custom-fields'
+            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'post-formats'
         ),
         'has_archive' => true
     );
 
-    register_post_type( 'foodfight', $food_fights_args );
+    register_post_type( 'restaurants', $ );
 }
 
 ?>

@@ -82,7 +82,7 @@ function ilovetoeat_init_posttypes() {
             'view_item' => 'Zobacz pojedynek',
             'search_items' => 'Szukaj pojedynku',
             'not_found' => 'Nie znaleziono żadnych pojedynków',
-            'not_found_in_trash' => 'Nie znaleziono żadnych pojedynków w koszu',
+            'not_found_in_trash' => 'Nie znaleziono żadnych restauracji w koszu',
             'parent_item_colon' => ''
         ),
         'public' => true,
@@ -94,12 +94,12 @@ function ilovetoeat_init_posttypes() {
         'hierarchical' => false,
         'menu_position' => 5,
         'supports' => array(
-            'title', 'editor', 'author', 'thumbnail', 'custom-fields'
+            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'post-formats'
         ),
         'has_archive' => true
     );
 
-    register_post_type( 'foodfight', $food_fights_args );
+    register_post_type( 'restaurants', $restaurants_args );
 }
 
 ?>

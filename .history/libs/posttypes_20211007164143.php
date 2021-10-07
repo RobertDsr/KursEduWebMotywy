@@ -94,7 +94,7 @@ function ilovetoeat_init_posttypes() {
         'hierarchical' => false,
         'menu_position' => 5,
         'supports' => array(
-            'title', 'editor', 'author', 'thumbnail', 'custom-fields'
+            'title', 'editor', 'author', 'thumbnail', 'custom-fields', 'post-formats'
         ),
         'has_archive' => true
     );
