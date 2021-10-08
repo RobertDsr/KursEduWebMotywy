@@ -292,15 +292,24 @@ function ilte_admin_icons()
             background-image: url('<?php echo $ICON_URL . 'icon-foodfight-menu1.png' ?>');
         }
 
-        #menu-posts-foodfight .wp-menu-image:hover {
-            background-image: url('<?php echo $ICON_URL . 'icon-foodfight-menu2.png' ?>');
-        }
-
 
         .icon32-posts-recipes,
         .icon32-posts-restaurants,
         .icon32-posts-foodfight {
             background-position: center center !important;
+        }
+
+        /* dla podstrony*/
+        .icon32-posts-recipes {
+            background-image: url('<?php echo $ICON_URL . 'icon-recipes-header.png' ?>') !important;
+        }
+
+        .icon32-posts-restaurants {
+            background-image: url('<?php echo $ICON_URL . 'icon-restaurants-header.png' ?>') !important;
+        }
+
+        .icon32-posts-foodfight {
+            background-image: url('<?php echo $ICON_URL . 'icon-foodfight-header.png' ?>') !important;
         }
     </style>
 

@@ -302,6 +302,9 @@ function ilte_admin_icons()
         .icon32-posts-foodfight {
             background-position: center center !important;
         }
+
+        /* dla podstrony*/
+        /* */
     </style>
 
 <?php } 

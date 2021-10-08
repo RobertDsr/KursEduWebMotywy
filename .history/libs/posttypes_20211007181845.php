@@ -233,6 +233,7 @@ function ilovetoeat_init_taxonomies()
     );
 }
 
+add_action('admin_head', 'ilte_admin_icons');
 function ilte_admin_icons()
 {
     $ICON_URL = ILOVEEAT_THEME_URL . 'img/admin/';
@@ -242,18 +243,6 @@ function ilte_admin_icons()
     <style>
         /* po to żeby w panelu admina zmienić domyślne ikonki custom post types*/
         /* dla menu */
-
-        #menu-posts-restaurants .dashicons-admin-post::before {
-            display: none;
-        }
-
-        #menu-posts-recipes .dashicons-admin-post::before {
-            display: none;
-        }
-
-        #menu-posts-foodfight .dashicons-admin-post::before {
-            display: none;
-        }
 
         #menu-posts-recipes .wp-menu-image,
         #menu-posts-restaurants .wp-menu-image,
@@ -269,31 +258,19 @@ function ilte_admin_icons()
         #menu-posts-restaurants.wp-has-current-submenu .wp-menu-image,
         #menu-posts-foodfight.wp-has-current-submenu .wp-menu-image {
             background-repeat: no-repeat;
-            background-position: center 11px !important;
+            background-position: center 6px !important;
         }
 
         #menu-posts-recipes .wp-menu-image {
-            background-image: url('<?php echo $ICON_URL . 'icon-recipes-menu1.png' ?>');
-        }
-
-        #menu-posts-recipes .wp-menu-image:hover {
-            background-image: url('<?php echo $ICON_URL . 'icon-recipes-menu3.png' ?>');
+            background-image: url('<?php echo $ICON_URL . 'icon-recipes-menu.png' ?>');
         }
 
         #menu-posts-restaurants .wp-menu-image {
-            background-image: url('<?php echo $ICON_URL . 'icon-restaurants-menu1.png' ?>');
-        }
-
-        #menu-posts-restaurants .wp-menu-image:hover {
-            background-image: url('<?php echo $ICON_URL . 'icon-restaurants-menu2.png' ?>');
+            background-image: url('<?php echo $ICON_URL . 'icon-restaurants-menu.png' ?>');
         }
 
         #menu-posts-foodfight .wp-menu-image {
-            background-image: url('<?php echo $ICON_URL . 'icon-foodfight-menu1.png' ?>');
-        }
-
-        #menu-posts-foodfight .wp-menu-image:hover {
-            background-image: url('<?php echo $ICON_URL . 'icon-foodfight-menu2.png' ?>');
+            background-image: url('<?php echo $ICON_URL . 'icon-foodfight-menu.png' ?>');
         }
 
 
@@ -302,8 +279,19 @@ function ilte_admin_icons()
         .icon32-posts-foodfight {
             background-position: center center !important;
         }
+
+        /* dla posdtrony*/
+        .icon32-posts-recipes {
+            background-image: url('<?php echo $ICON_URL . 'icon-recipes-header.png' ?>') !important;
+        }
+
+        .icon32-posts-restaurants {
+            background-image: url('<?php echo $ICON_URL . 'icon-restaurants-header.png' ?>') !important;
+        }
+
+        .icon32-posts-foodfight {
+            background-image: url('<?php echo $ICON_URL . 'icon-foodfight-header.png' ?>') !important;
+        }
     </style>
 
-<?php } 
-
-add_action('admin_head', 'ilte_admin_icons');
+<?php } ?>

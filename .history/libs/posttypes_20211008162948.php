@@ -302,6 +302,19 @@ function ilte_admin_icons()
         .icon32-posts-foodfight {
             background-position: center center !important;
         }
+
+        /* dla podstrony*/
+        /* .icon32-posts-recipes {
+            background-image: url('<?php echo $ICON_URL . 'icon-recipes-header.png' ?>') !important;
+        }
+
+        .icon32-posts-restaurants {
+            background-image: url('<?php echo $ICON_URL . 'icon-restaurants-header.png' ?>') !important;
+        }
+
+        .icon32-posts-foodfight {
+            background-image: url('<?php echo $ICON_URL . 'icon-foodfight-header.png' ?>') !important;
+        } */
     </style>
 
 <?php } 
