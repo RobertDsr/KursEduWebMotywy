@@ -32,10 +32,9 @@
 
                         <?php while ( have_posts() ) : the_post(); ?>
 
+                        <?php if()?>
+
                         <section id="restaurants-<?php the_ID(); ?>" <?php post_class( 'entry' )?>>
-
-                        <?php if(get_post_format( $post->ID ) == 'gallery' ) : ?>
-
                             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                             <div class="description">
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -48,22 +47,6 @@
                                 <p><?php the_excerpt_max_charlength(173); ?></p>
                                 <a class="more" href="#">...</a>
                             </div>
-
-                            <?php else: ?>
-
-                                <div class="description width">
-                                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                                <div>
-                                <?php printRestaurantCategories($post->ID); ?>
-                                    <ul class="difficulty dark">
-                                        <?php printRanking($post->ID); ?>
-                                    </ul>
-                                </div>
-                                <p><?php the_excerpt_max_charlength(173); ?></p>
-                                <a class="more" href="#">...</a>
-                            </div>
-
-                            <?php endif; ?>
                         </section>
 
                     <?php endwhile; ?>

@@ -51,7 +51,7 @@
 
                             <?php else: ?>
 
-                                <div class="description width">
+                                <div class="description wi">
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                 <div>
                                 <?php printRestaurantCategories($post->ID); ?>

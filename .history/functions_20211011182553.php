@@ -21,15 +21,4 @@ function printRestaurantCategories($post_id) {
     printPostCategories($post_id, array('cousine-type', 'city'));
 }
 
-// implementacja czapeczek - ocen
-function printRanking ($post_id) {
-    $rate = (int) get_post_meta( $post_id, 'ranking', true );
-
-    for ($i=1; $i<5; $i++) {
-        if($i<=$rate) {
-            echo '<li class="active"></li>';
-        } else {
-            echo '<li></li>';
-        }
-    }
-}
+func
