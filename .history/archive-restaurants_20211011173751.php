@@ -39,22 +39,6 @@
                                 <div>
                                 <?php printRestaurantCategories($post->ID); ?>
                                     <ul class="difficulty dark">
-
-                                        <?php
-                                        
-                                        // implementacja czapeczek - ocen
-                                        $rate = (int) get_post_meta( $post->ID, 'ranking', true );
-
-                                        for ($i=1; $i<5; $i++) {
-                                            if($i<=$rate) {
-                                                echo '<li class="active"></li>';
-                                            } else {
-                                                echo '<li></li>';
-                                            }
-                                        }
-
-                                        ?>
-
                                     </ul>
                                 </div>
                                 <p><?php the_excerpt_max_charlength(173); ?></p>

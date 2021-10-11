@@ -42,7 +42,7 @@
 
                                         <?php
                                         
-                                        // implementacja czapeczek - ocen
+                                        
                                         $rate = (int) get_post_meta( $post->ID, 'ranking', true );
 
                                         for ($i=1; $i<5; $i++) {

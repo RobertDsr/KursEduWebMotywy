@@ -37,24 +37,12 @@
                             <div class="description">
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                 <div>
-                                <?php printRestaurantCategories($post->ID); ?>
+                                <?php printRestaurantCategorie
                                     <ul class="difficulty dark">
-
-                                        <?php
-                                        
-                                        // implementacja czapeczek - ocen
-                                        $rate = (int) get_post_meta( $post->ID, 'ranking', true );
-
-                                        for ($i=1; $i<5; $i++) {
-                                            if($i<=$rate) {
-                                                echo '<li class="active"></li>';
-                                            } else {
-                                                echo '<li></li>';
-                                            }
-                                        }
-
-                                        ?>
-
+                                        <li class="active">&Bumpeq;</li>
+                                        <li class="active">&Bumpeq;</li>
+                                        <li class="active">&Bumpeq;</li>
+                                        <li>&Bumpeq;</li>
                                     </ul>
                                 </div>
                                 <p><?php the_excerpt_max_charlength(173); ?></p>

@@ -13,7 +13,7 @@ define('ILOVEEAT_THEME_URL', WP_CONTENT_URL . '/themes/' .get_template() .'/');
 require_once ILOVEEAT_THEME_DIR.'libs/posttypes.php';
 require_once ILOVEEAT_THEME_DIR.'libs/utils.php';
 
-// wyświetla na stronie restaurants typ kuchni i miasto
+// wyświetla na stronie restaurants typ kuchni i 
 function printRestaurantCategories($post_id) {
     printPostCategories($post_id, array('cousine-type', 'city'));
 }
