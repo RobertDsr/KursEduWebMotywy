@@ -1,6 +1,6 @@
 <?php
 
-// funkcja która przycina tekst na stronie restaurants
+// funkcja która przycina tekst
 function the_excerpt_max_charlength($charlength) {
     echo cutText(get_the_excerpt(), $charlength);
 }
