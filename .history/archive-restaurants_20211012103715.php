@@ -91,10 +91,12 @@
             </div>
 
             <div class="pagination">
-                <?php
-
-                generatePagination(get_query_var('paged'), $loop);
-                ?>
+                <ul>
+                    <li><a href="#" class="prev page-numbers">«</a></li>
+                    <li><span class="current">1</span></li>
+                    <li><a href="#" class="page-numbers">2</a></li>
+                    <li><a href="#" class="next page-numbers">»</a></li>
+                </ul>
             </div>
         </div>
 

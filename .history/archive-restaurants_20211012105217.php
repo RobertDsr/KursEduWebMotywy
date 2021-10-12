@@ -91,10 +91,6 @@
             </div>
 
             <div class="pagination">
-                <?php
-
-                generatePagination(get_query_var('paged'), $loop);
-                ?>
             </div>
         </div>
 

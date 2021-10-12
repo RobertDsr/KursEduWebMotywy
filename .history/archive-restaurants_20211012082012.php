@@ -34,18 +34,18 @@
             <?php
             $query_params = getQueryParams();
             if (isset($query_params['search'])) {
-                $query_params['post_title_like'] = $query_params['search'];
+                $query_params['post_params_like'] = $query_params['search'];
                 unset($query_params['search']);
             }
-            $loop = new WP_Query($query_params);
+            $loop = new WP_Query($query_params)
 
             ?>
 
             <div class="wrapper">
 
-                <?php if ($loop->have_posts()) : ?>
+                <?php if ($loophave_posts()) : ?>
 
-                    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                    <?php while (have_posts()) : the_post(); ?>
 
                         <section id="restaurants-<?php the_ID(); ?>" <?php post_class('entry') ?>>
 
@@ -91,10 +91,12 @@
             </div>
 
             <div class="pagination">
-                <?php
-
-                generatePagination(get_query_var('paged'), $loop);
-                ?>
+                <ul>
+                    <li><a href="#" class="prev page-numbers">«</a></li>
+                    <li><span class="current">1</span></li>
+                    <li><a href="#" class="page-numbers">2</a></li>
+                    <li><a href="#" class="next page-numbers">»</a></li>
+                </ul>
             </div>
         </div>
 
