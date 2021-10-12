@@ -24,7 +24,7 @@
                     <ul>
                         <?php
                     $foodFight = new WP_Query( array(
-                                'post_type' => 'foodfight',
+                                'post_type' => 'foodfig',
                                 'posts_per_page' => 5
                             ) );
 
@@ -39,18 +39,11 @@
                 <section class="dinner last">
                     <h2>Restauracje</h2>
                     <ul>
-                    <?php
-                        
-                        $restauracje = new WP_Query( array(
-                            'post_type' => 'restaurants',
-                            'posts_per_page' => 5
-                        ) );
-
-                        while($restauracje->have_posts()) : $restauracje->the_post();
-                    
-                    ?>
-                    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                    <?php endwhile; ?>
+                        <li><a href="#">Restauracja Da Pietro</a></li>
+                        <li><a href="#">Miód Malina</a></li>
+                        <li><a href="#">Trattoria Mamma Mia</a></li>
+                        <li><a href="#">Pod Wawelem</a></li>
+                        <li><a href="#">Trattoria Mamma Mia</a></li>
                     </ul>
                 </section>
             </div>

@@ -41,12 +41,12 @@
                     <ul>
                     <?php
                         
-                        $restauracje = new WP_Query( array(
-                            'post_type' => 'restaurants',
+                        $restaurants = new WP_Query( array(
+                            'post_type' => '$restaurants',
                             'posts_per_page' => 5
                         ) );
 
-                        while($restauracje->have_posts()) : $restauracje->the_post();
+                        while($przepisy->have_posts()) : $przepisy->the_post();
                     
                     ?>
                     <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>

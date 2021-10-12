@@ -46,7 +46,7 @@
                             'posts_per_page' => 5
                         ) );
 
-                        while($restauracje->have_posts()) : $restauracje->the_post();
+                        while($restaurants->have_posts()) : $restaurants->the_post();
                     
                     ?>
                     <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>

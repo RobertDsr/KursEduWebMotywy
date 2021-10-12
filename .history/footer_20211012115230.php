@@ -39,18 +39,7 @@
                 <section class="dinner last">
                     <h2>Restauracje</h2>
                     <ul>
-                    <?php
                         
-                        $restauracje = new WP_Query( array(
-                            'post_type' => 'restaurants',
-                            'posts_per_page' => 5
-                        ) );
-
-                        while($restauracje->have_posts()) : $restauracje->the_post();
-                    
-                    ?>
-                    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                    <?php endwhile; ?>
                     </ul>
                 </section>
             </div>
