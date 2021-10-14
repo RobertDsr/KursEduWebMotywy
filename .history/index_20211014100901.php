@@ -145,7 +145,6 @@
                         <?php endwhile; ?>
                     </ul>
                     <a href="#">Wszystkie</a>
-                    <?php endif; ?>
                 </div>
             </section>
 

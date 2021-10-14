@@ -136,16 +136,15 @@
                         'post_status'  => 'publish'
                     ));
 
-                    if($restaurants_query -> have_posts()) :
+                    if($recips_query -> have_posts()) :
                     ?>
 
                     <ul class="icons-list">
-                        <?php while($restaurants_query->have_posts()) : $restaurants_query->the_post(); ?>
+                        <?php while($recips_query->have_posts()) : $recips_query->the_post(); ?>
                         <li class="chicken"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                         <?php endwhile; ?>
                     </ul>
                     <a href="#">Wszystkie</a>
-                    <?php endif; ?>
                 </div>
             </section>
 

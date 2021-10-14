@@ -109,13 +109,11 @@
                     ?>
 
                     <ul class="icons-list">
-                        <?php while($recips_query->have_posts()) : $recips_query->the_post(); ?>
-                        <li class="chicken"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                        <?php endwhile; ?>
+                        <?php while()?>
+                        <li class="chicken"></li>
                     </ul>
 
                     <a href="#">Wszystkie przepisy</a>
-                    <?php endif; ?>
                 </div>
             </section>
 
@@ -126,26 +124,15 @@
                 </div>
                 <div class="step2 hidden">
                     <h2>Ostatnio dodane:</h2>
-                    <?php
-                    
-                    $restaurants_query = new WP_Query(array(
-                        'numbersposts' => 7,
-                        'orderby'      => 'post_date',
-                        'oreder'       => 'DESC',
-                        'post_type'    => 'restaurants',
-                        'post_status'  => 'publish'
-                    ));
-
-                    if($restaurants_query -> have_posts()) :
-                    ?>
 
                     <ul class="icons-list">
-                        <?php while($restaurants_query->have_posts()) : $restaurants_query->the_post(); ?>
-                        <li class="chicken"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                        <?php endwhile; ?>
+                        <li class="waiter"><a href="#">Restauracja Da Pietro</a></li>
+                        <li class="waiter"><a href="#">Miód Malina</a></li>
+                        <li class="waiter"><a href="#">Trattoria Mamma Mia</a></li>
+                        <li class="waiter"><a href="#">Pod Wawelem</a></li>
+                        <li class="waiter"><a href="#">Pomodorino</a></li>
                     </ul>
                     <a href="#">Wszystkie</a>
-                    <?php endif; ?>
                 </div>
             </section>
 

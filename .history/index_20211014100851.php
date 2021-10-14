@@ -136,7 +136,7 @@
                         'post_status'  => 'publish'
                     ));
 
-                    if($restaurants_query -> have_posts()) :
+                    if($recips_query -> have_posts()) :
                     ?>
 
                     <ul class="icons-list">
@@ -145,7 +145,6 @@
                         <?php endwhile; ?>
                     </ul>
                     <a href="#">Wszystkie</a>
-                    <?php endif; ?>
                 </div>
             </section>
 
