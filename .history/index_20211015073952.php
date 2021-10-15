@@ -210,20 +210,17 @@
                         'posts_per_page' => 6
                     ));
 
-                    while($recent_recipes_loop->have_posts()) :
-                        $recent_recipes_loop->the_post();
+                    
                     
                     ?>
 
 
                         <div>
-                            <?php the_post_thumbnail(); ?>
-                            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                            <p><?php the_excerpt_max_charlength(94)?></p>
-                            <a class="more" href="<?php the_permalink(); ?>">...</a>
+                            <a href="#"><img src="content/home-slider-1.jpg" alt="" /></a>
+                            <h2><a href="#">Sałatka z chrupiącym kurczakiem</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed magna orci, eget egestas tellus. Mauris id lectus lorem, et condimentum est. Nam auctor venenatis arcu, eget [...]</p>
+                            <a class="more" href="#">...</a>
                         </div>
-
-                        <?php endwhile; ?>
 
 
 

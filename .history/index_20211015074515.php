@@ -219,11 +219,9 @@
                         <div>
                             <?php the_post_thumbnail(); ?>
                             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                            <p><?php the_excerpt_max_charlength(94)?></p>
-                            <a class="more" href="<?php the_permalink(); ?>">...</a>
+                            <p><?</p>
+                            <a class="more" href="#">...</a>
                         </div>
-
-                        <?php endwhile; ?>
 
 
 

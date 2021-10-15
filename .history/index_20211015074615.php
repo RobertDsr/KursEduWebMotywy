@@ -223,8 +223,6 @@
                             <a class="more" href="<?php the_permalink(); ?>">...</a>
                         </div>
 
-                        <?php endwhile; ?>
-
 
 
                     </div>
