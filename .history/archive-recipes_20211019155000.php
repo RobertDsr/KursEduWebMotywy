@@ -142,7 +142,7 @@
             ?>
 
         <h4 class="search-results">Wyniki wyszukiwania</h4>
-        <?php endif; ?>
+        <?php end?>
 
             <div class="wrapper">
 

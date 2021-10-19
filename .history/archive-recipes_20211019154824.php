@@ -137,12 +137,11 @@
         <div class="left">
             <?php
             global $search_ingr;
-            if(isset($search_ingr) || isset($search)) :
+            if(isset($search_ingr) 
             
             ?>
 
         <h4 class="search-results">Wyniki wyszukiwania</h4>
-        <?php endif; ?>
 
             <div class="wrapper">
 

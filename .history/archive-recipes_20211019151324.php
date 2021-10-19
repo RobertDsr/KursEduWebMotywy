@@ -48,7 +48,7 @@
                 <?php $search = getQuerySingleParam('search'); ?>
 
 
-                <form class="search" method="get" action="<?php echo home_url() . '/recipes/' ?>">
+                <form class="search" method="get" action="<?php getCurrentPageUrl(); ?>">
                     <label for="search">Znajdź przepis:</label>
                     <fieldset>
                         <input type="text" name="search" id="search" value="<?php echo $search ?>" />
@@ -61,7 +61,7 @@
                 <a href="#">Co masz w lodówce?</a>
 
                 <div class="submenu">
-                    <form method="get" action="<?php echo home_url() . '/wyszukiwanie-po-skladnikach' ?>" class="transform">
+                    <form method="get" action="<?php home_url() . '/wyszukiwanie'?>" class="transform">
                         <div class="first">
                             <ul>
                                 <?php
@@ -135,24 +135,11 @@
 <section id="recipes" class="content">
     <div class="pos-center">
         <div class="left">
-            <?php
-            global $search_ingr;
-            if(isset($search_ingr) || isset($search)) :
-            
-            ?>
-
-        <h4 class="search-results">Wyniki wyszukiwania</h4>
-        <?php endif; ?>
 
             <div class="wrapper">
 
                 <?php
 
-                global $search_ingr;
-
-                if(isset($search_ingr)) {
-                    global $loop;
-                }else {
 
                 $query_params = getQueryParams();
                 if (isset($query_params['search'])) {
@@ -160,8 +147,6 @@
                     unset($query_params['search']);
                 }
                 $loop = new WP_Query($query_params);
-
-            }
 
 
                 if ($loop->have_posts()) :

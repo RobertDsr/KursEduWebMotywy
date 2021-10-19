@@ -136,13 +136,12 @@
     <div class="pos-center">
         <div class="left">
             <?php
-            global $search_ingr;
-            if(isset($search_ingr) || isset($search)) :
+            
+            if
             
             ?>
 
         <h4 class="search-results">Wyniki wyszukiwania</h4>
-        <?php endif; ?>
 
             <div class="wrapper">
 

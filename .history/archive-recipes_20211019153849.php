@@ -48,7 +48,7 @@
                 <?php $search = getQuerySingleParam('search'); ?>
 
 
-                <form class="search" method="get" action="<?php echo home_url() . '/recipes/' ?>">
+                <form class="search" method="get" action="<?php $search_ingr ?>">
                     <label for="search">Znajdź przepis:</label>
                     <fieldset>
                         <input type="text" name="search" id="search" value="<?php echo $search ?>" />
@@ -135,14 +135,6 @@
 <section id="recipes" class="content">
     <div class="pos-center">
         <div class="left">
-            <?php
-            global $search_ingr;
-            if(isset($search_ingr) || isset($search)) :
-            
-            ?>
-
-        <h4 class="search-results">Wyniki wyszukiwania</h4>
-        <?php endif; ?>
 
             <div class="wrapper">
 
