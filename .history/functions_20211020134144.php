@@ -2,8 +2,8 @@
 
 if (!defined("ILOVEEAT_THEME_DIR")) {
     //do wyboru dwie metody
-    // define('ILOVEEAT_THEME_DIR', ABSPATH. 'wp-content/themes' .get_template() .'/');
-    define('ILOVEEAT_THEME_DIR', get_theme_root() . '/' . get_template() . '/');
+    define('ILOVEEAT_THEME_DIR', ABSPATH. 'wp-content/themes' .get_template() .'/');
+    // define('ILOVEEAT_THEME_DIR', get_theme_root() . '/' . get_template() . '/');
 }
 
 if (!defined("ILOVEEAT_THEME_URL")) {
@@ -38,15 +38,15 @@ function printRanking($post_id)
 
 // rejestracja sidebar
 
-register_sidebar( array(
-    'name' => 'Restauracje (listing)',
-    'id' => 'restaurants-archive-widget',
-    'description' => 'Widgety w sidebarze w archiwum restauracji',
-    'before_widget' => '<div id="%1$s" class="box widget %2$s>',
-    'after_widget' => '</div>',
-    'before_title' => '<h2>',
-    'after_title' => '</h2>'
-) );
+// register_sidebar( array(
+//     'name' => 'Restauracje (listing)',
+//     'id' => 'restaurants-archive-widget',
+//     'description' => 'Widgety w sidebarze w archiwum restauracji',
+//     'before_widget' => '<div id="%1$s" class="box widget %2$s>',
+//     'after_widget' => '</div>',
+//     'before_title' => '<h2>',
+//     'after_title' => '</h2>'
+// ) );
 
 if (function_exists('register_sidebar')) {
     $sidebar_list = array(
@@ -207,5 +207,3 @@ function getHierarchicalTaxonomies($taxonomy)
     return $return;
 
 }
-
-

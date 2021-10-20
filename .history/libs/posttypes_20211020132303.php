@@ -102,7 +102,7 @@ function ilovetoeat_init_posttypes()
 
     register_post_type('foodfight', $food_fights_args);
 }
-add_action('init', 'ilovetoeat_init_posttypes', 0);
+add_action('init', 'ilovetoeat_init_posttypes');
 
 /*Rejestracja taksonomi */
 

@@ -207,5 +207,3 @@ function getHierarchicalTaxonomies($taxonomy)
     return $return;
 
 }
-
-
